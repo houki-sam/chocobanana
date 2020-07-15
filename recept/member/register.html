@@ -31,16 +31,24 @@
     </nav>
 	<div class="container">
         <h1>新規会員登録</h1>
-        <form action="./register_result.html" method="POST">
+        <form action="./register_confirm.html" method="POST">
             <div class="form-group">
-                <label for="name">名前</label>
+                <label for="name">名前(漢字)</label>
                 <input type="text" name="user_name" value="" class="form-control">
             </div>
             <div class="form-group">
-                <label for="company">会社名</label>
-                <input type="text" name="company_name" value="" class="form-control">
+                <label for="name">名前(カナ)</label>
+                <input type="text" name="user_name" value="" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">登録</button>
+            <div class="form-group">
+                <label for="company">勤め先会社名</label><br>
+                <select name="company" class="form-control">
+                    <option value="サンプル1">勤め先企業を選んでください</option>
+                    <option value="サンプル2">山田商事</option>
+                    <option value="サンプル3">田中商事</option>
+                    </select>
+            </div>
+            <button type="submit" class="btn btn-primary">確認する</button>
         </form>
 		<a href="./member.html">会員一覧</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
