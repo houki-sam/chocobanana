@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>確認画面</title>
+    <title>注文一覧</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -29,32 +29,9 @@
         </div>
     </nav>
     <div class="container">
-        <h1>確認画面</h1>
-			<h2>注文商品</h2>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th scope="col">商品番号</th>
-                    <th scope="col">商品名</th>
-                    <th scope="col">値段</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>01-70-3</td>
-                    <td>ダンディーパンツ</td>
-                    <td>10,000円</td>
-                </tr>
-                <tr>
-					<td>01-77-1</td>
-                    <td>スマイルニンニク</td>
-                    <td>560円</td>
-                </tr>
-                </tbody>
-            </table>
-
-			<h2>お客様情報</h2>
-			<div class="container-fluid">
+        <h1>注文詳細</h1>
+		<h2>注文情報</h2>
+        <div class="container-fluid">
             <table id="productSizes" class="table table-bordered">
                 
                 <tbody>
@@ -148,16 +125,48 @@
                     </tr>
                 </tbody>
             </table>
-
-			<div class="row">
+             <h2>注文商品</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">商品番号</th>
+                    <th scope="col">商品名</th>
+					<th scope="col">数量</th>
+					<th scope="col">金額</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>70</td>
+					<td>3</td>
+					<td>スマイルニンニク</td>
+					<td>1</td>
+					<td>260円</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>77</td>
+					<td>1</td>
+					<td>ダンディーパンツ</td>
+					<td>2</td>
+					<td>540円</td>
+                </tr>
+                </tbody>
+            </table>
+        <br>
+		<div class="row">
 		  	<div class="col-10">
 		  	</div>
 			<div class="col-2">
-		    <a href="./register_result.html"><button type="submit" class="btn btn-primary">送信</button></a>
+		    <a href="./edit.html"><button type="submit" class="btn btn-info">編集</button></a>
+			<a href="./delite.html"><button type="submit" class="btn btn-danger">削除</button></a>
 			</div>
 			
 			</div>
-			<a href="./customer.html">お客さま情報入力</a>へ戻る<br>
+            <a href="./register/register.html">新規登録</a>へ<br>
+            <a href="../menu.html">注文受付担当メニュー</a>へ
+        </div>
     </div>    
 </body>
 </html>

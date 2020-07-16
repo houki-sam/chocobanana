@@ -32,81 +32,137 @@
 	<div class="container">
         <h1>お客様情報入力</h1>
         <form action="./confirm.html" method="POST">
-            <div class="form-group">
-                <label for="phone_number">ご依頼主連絡先電話番号区分</label>
-                <input type="text" name="phone_number" value="" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="address">ご依頼主連絡先電話番号</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">届け先区分</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">届け先郵便番号</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">届け先住所</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">留守の時</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">届け先氏名</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">届け先郵便番号</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">支払い区分</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込先銀行</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込先銀行支店名</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込先口座種別</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込先銀行口座番号</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込元銀行</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込元銀行支店名</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込元口座種別</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-			<div class="form-group">
-                <label for="address">振込元銀行口座番号</label>
-                <input type="text" name="address" value="" class="form-control">
-            </div>
-            <div class="row">
-		  	<div class="col-10">
-		  	</div>
-			<div class="col-2">
-		    <button type="submit" class="btn btn-primary">登録</button>
+        	<div class="card mb-3">
+				<div class="card-header">
+					担当者登録
+				</div>
+				<div class="card-body">
+		        	<div class="form-group">
+		                <label for="address">届け先氏名</label>
+		                <input type="text" name="address" value="" class="form-control" required>
+		            </div>
+		            <div class="row">
+		            	<div class="col-4">
+							<div class="form-group">
+				                <label for="company">ご依頼主連絡先電話番号区分</label><br>
+				                <select name="company" class="form-control" required>
+				                    <option value="サンプル1">連絡先電話番号区分を選んでください</option>
+				                    <option value="サンプル2">会社</option>
+				                    <option value="サンプル3">自宅</option>
+									<option value="サンプル3">その他</option>
+				                    </select>
+				            </div>
+						</div>
+						<div class="col-4
+				            <div class="form-group">
+				                <label for="phone_number">ご依頼主連絡先電話番号区分（その他の場合）</label>
+				                <input type="text" name="phone_number" value="" class="form-control">
+				            </div>
+				            <div class="form-group">
+				                <label for="address">ご依頼主連絡先電話番号</label>
+				                <input type="text" name="address" value="" class="form-control" required>
+				            </div>
+					<div class="form-group">
+		                <label for="company">届け先区分</label><br>
+		                <select name="company" class="form-control" required>
+		                    <option value="サンプル1">届け先号区分を選んでください</option>
+		                    <option value="サンプル3">自宅</option>
+							<option value="サンプル3">その他</option>
+		                    </select>
+		            </div>
+					<div class="form-group">
+		                <label for="address">届け先郵便番号</label>
+		                <input type="text" name="address" value="" class="form-control" required>
+		            </div>
+					<div class="form-group">
+		                <label for="address">届け先住所</label>
+		                <input type="text" name="address" value="" class="form-control" required>
+		            </div>
+					<div class="form-group">
+		                <label for="address">留守の時</label>
+		                <input type="text" name="address" value="" class="form-control" required>
+		            </div>
+				</div>
 			</div>
-	　		</div>
+			
+			
+			<div class="card">
+				<div class="card-header">
+		    		担当者登録
+				</div>
+			  	<div class="card-body">
+					<div class="form-group">
+		                <label for="company">支払い区分</label><br>
+		                <select name="company" class="form-control" required>
+		                    <option value="サンプル1">支払い区分を選んでください</option>
+		                    <option value="サンプル3">銀行振込</option>
+							<option value="サンプル3">給与控除</option>
+							<option value="サンプル3">ボーナス控除</option>
+		                </select>
+					</div>
+
+					<div class="row">
+						<div class="col-6">
+							<div class="card">
+					        	<div class="card-header">
+				    				担当者登録
+								</div>
+					  			<div class="card-body">
+									<div class="form-group">
+						                <label for="address">振込元銀行</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+									<div class="form-group">
+						                <label for="address">振込元銀行支店名</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+									<div class="form-group">
+						                <label for="company">振込元口座種別</label><br>
+						                <select name="company" class="form-control" required>
+						                    <option value="サンプル1">振込元口座種別を選んでください</option>
+						                    <option value="サンプル3">当座預金</option>
+											<option value="サンプル3">普通預金</option>
+						                    </select>
+						            </div>
+									<div class="form-group">
+						                <label for="address">振込元銀行口座番号</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card">
+					        	<div class="card-header">
+				    				担当者登録
+								</div>
+					  			<div class="card-body">
+						            <div class="form-group">
+						                <label for="address">振込先銀行</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+									<div class="form-group">
+						                <label for="address">振込先銀行支店名</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+									<div class="form-group">
+						                <label for="company">振込先口座種別</label><br>
+						                <select name="company" class="form-control" required>
+						                    <option value="サンプル1">振込先口座種別を選んでください</option>
+						                    <option value="サンプル3">当座預金</option>
+											<option value="サンプル3">普通預金</option>
+						                    </select>
+						            </div>
+									<div class="form-group">
+						                <label for="address">振込先銀行口座番号</label>
+						                <input type="text" name="address" value="" class="form-control" required>
+						            </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </form>
 		<a href="./cart.html">カート一覧</a>へ戻る<br>
     </div>    

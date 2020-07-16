@@ -38,88 +38,58 @@
 			</div>
 		</div>
 		
-        <p>
-        <form action="./search_result.html" method="POST">
-            <div class="form-group">
-                <label for="no">商品番号（号、ページ、No）から検索</label>
-                <div class="form-group row">
-				    <div class="col-sm-3">
-				        <label>号</label>
-				        <input name="gou" class="firstname form-control" required="" type="text" value="112">
-				    </div>
-				    <div class="col-sm-3">
-				        <label>ページ</label>
-				        <input name="page" class="lastname form-control" required="" type="text" value="124">
-				    </div>
-				    <div class="col-sm-4">
-				        <label>No</label>
-				        <input name="no" class="lastname form-control" required="" type="text" value="4444">
-				    </div>
-				    <div class="col-sm-2">
-				    <br>
-				         <button type="submit" class="btn btn-primary">検索する</button>
-				    </div>
+		<div class="card mb-3">
+			<div class="card-header">
+				商品番号（号、ページ、No）から検索
 				</div>
-            </div>
-		</form>
-		</p>
+			  	<div class="card-body">
+		        <form action="./search_result.html" method="POST">
+		            <div class="form-group">
+		                <div class="form-group row">
+						    <div class="col-sm-3">
+						        <label>号</label>
+						        <input name="gou" class="firstname form-control" required="" type="tel" value="112">
+						    </div>
+						    <div class="col-sm-3">
+						        <label>ページ</label>
+						        <input name="page" class="lastname form-control" required="" type="tel" value="124">
+						    </div>
+						    <div class="col-sm-4">
+						        <label>No</label>
+						        <input name="no" class="lastname form-control" required="" type="tel" value="4444">
+						    </div>
+						    <div class="col-sm-2">
+						    <br>
+						         <button type="submit" class="btn btn-primary">検索する</button>
+						    </div>
+						</div>
+		            </div>
+				</form>
+			</div>
+		</div>
 		
-		<p>
-		<form action="./search_result.html" method="POST">
-            <div class="form-group">
-                <label for="no">商品番号（号、ページ）から検索</label>
-                <div class="form-group row">
-				    <div class="col-sm-3">
-				        <label>号</label>
-				        <input name="gou" class="firstname form-control" required="" type="text" value="112">
-				    </div>
-				    <div class="col-sm-3">
-				        <label>ページ</label>
-				        <input name="page" class="lastname form-control" required="" type="text" value="124">
-				    </div>
-				    <div class="col-sm-2">
-				    <br>
-				         <button type="submit" class="btn btn-primary">検索する</button>
-				    </div>
+		
+		
+		<div class="card mb-3">
+			<div class="card-header">
+				<label for="name">商品名から検索</label>
 				</div>
-            </div>
-		</form>
-		</p>
-		
-		<p>
-		<form action="./search_result.html" method="POST">
-            <div class="form-group">
-                <label for="no">商品番号（号）から検索</label>
-                <div class="form-group row">
-				    <div class="col-sm-3">
-				        <label>号</label>
-				        <input name="gou" class="firstname form-control" required="" type="text" value="112">
-				    </div>
-				    <div class="col-sm-2">
-				    <br>
-				         <button type="submit" class="btn btn-primary">検索する</button>
-				    </div>
+			  	<div class="card-body">
+					<form action="./search_result.html" method="POST">
+					<div class="form-group">
+						<div class="form-group row">
+							<div class="col-sm-10">
+								
+								<input type="text" id="name" value="" class="form-control" required>
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-primary">検索する</button>
+							</div>
+						</div>   
+					</form>
 				</div>
-            </div>
-		</form>
-		</p>
-		
-		<p>
-		 <form action="./search_result.html" method="POST">
-            <div class="form-group">
-            	<div class="form-group row">
-            		<div class="col-sm-10">
-		                <label for="name">商品名から検索</label>
-		                <input type="text" id="name" value="" class="form-control">
-					</div>
-					<div class="col-sm-2">
-		                <br>
-		                 <button type="submit" class="btn btn-primary">検索する</button>
-					</div>
-            </div>   
-        </form>
-		</p>
-		
+			</div>
+		</div>
 		<a href="./register.html">会員確認</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
     </div>    

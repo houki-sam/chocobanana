@@ -19,7 +19,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">注文受付</a>
                 </li>
-                <li class="nav-item　active">
+                <li class="nav-item active">
                     <a class="nav-link" href="./order/menu.html">発注</a>
                 </li>
                 <li class="nav-item">
@@ -29,64 +29,71 @@
         </div>
     </nav>
     <div class="container">
-		<h1>契約店を編集</h1>
-		<form action="./edit_result.html" method="POST">
+		<h1>契約店編集</h1>
+		<form action="./edit_confirm.html" method="POST">
+			<div class="form-group">
+                <p>契約店番号：17</p>
+            </div>
             <div class="form-group">
                 <label for="kanji_name">契約店名（漢字）</label>
-                <input type="text" name="kanji_name" value="ロータス自動車" class="form-control">
+                <input type="text" maxlength="50" name="kanji_name" value="ロータス自動車" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="kana_name">契約店名（カタカナ）</label>
-                <input type="text" name="kana_name" value="ロータスジドウシャ" class="form-control">
+                <label for="kana_name">契約店名（カナ）</label>
+                <input type="text" maxlength="50" name="kana_name" value="ロータスジドウシャ" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="address_num">支払先郵便番号</label>
-                <input type="text" name="address_num" value="1000005" class="form-control">
+                <label for="address_num">郵便番号</label>
+                <input type="text" maxlength="7" name="address_num" value="1000005" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="address">支払先住所</label>
-                <input type="text" name="address" value="東京都千代田区丸の内1-1-1" class="form-control">
+                <label for="address">住所</label>
+                <input type="text" maxlength="100" name="address" value="東京都千代田区丸の内1-1-1" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="phone_num">支払先電話番号</label>
-                <input type="text" name="phone_num" value="032109876" class="form-control">
+                <label for="phone_num">電話番号</label>
+                <input type="text" maxlength="11" name="phone_num" value="032109876" class="form-control" required>
             </div>
 			<div class="form-group">
                 <label for="dept">担当部署</label>
-                <input type="text" name="dept" value="総務部" class="form-control">
+                <input type="text" maxlength="30" name="dept" value="総務部" class="form-control" required>
             </div>
 			<div class="form-group">
                 <label for="dept_kanji_name">担当者名（漢字）</label>
-                <input type="text" name="dept_kanji_name" value="石原真子" class="form-control">
+                <input type="text" maxlength="50" name="dept_kanji_name" value="石原真子" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="dept_kana_name">担当者名（カタカナ）</label>
-                <input type="text" name="dept_kana_name" value="イシハラマコ" class="form-control">
+                <label for="dept_kana_name">担当者名（カナ）</label>
+                <input type="text" maxlength="50" name="dept_kana_name" value="イシハラマコ" class="form-control" required>
             </div>
 			<div class="form-group">
                 <label for="dept_phonenum">担当者電話番号</label>
-                <input type="text" name="dept_phonenum" value="0332101234" class="form-control">
+                <input type="text" maxlength="11" name="dept_phonenum" value="0332101234" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="name">契約店振込銀行</label>
-                <input type="text" name="user_name" value="三井住友銀行" class="form-control">
+                <label for="name">振込銀行</label>
+                <input type="text" name="user_name" value="三井住友銀行" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="name">契約店振込銀行支店名</label>
-                <input type="text" name="user_name" value="日吉駅前支店" class="form-control">
+                <label for="name">振込銀行支店名</label>
+                <input type="text" name="user_name" value="日吉駅前支店" class="form-control" required>
             </div>
 			<div class="form-group">
-                <label for="name">契約店口座種別</label>
-                <input type="radio" name="user_name" value="当" class="form-control">当座預金
-				<input type="radio" name="user_name" value="普" class="form-control">普通預金
+                <label for="company">口座種別</label><br>
+                <select name="company" class="form-control" required>
+                    <option value="サンプル1">口座種別を選んでください</option>
+                    <option value="サンプル2">当座</option>
+                    <option value="サンプル3">普通</option>
+                    </select>
             </div>
 			<div class="form-group">
-                <label for="name">契約店口座番号</label>
-                <input type="text" name="user_name" value="0123456" class="form-control">
+                <label for="name">口座番号</label>
+                <input type="text" name="user_name" value="0123456" class="form-control" required>
             </div>
         
-            <button type="submit" class="btn btn-primary">確定</button>
+            <button type="submit" class="btn btn-info">編集</button>
         </form>
+		<a href="./detail.html">契約店詳細</a>へ<br>
 		<a href="./supplier.html">契約店一覧</a>へ<br>
 		<a href="../menu.html">発注担当メニュー</a>へ
     </div>    

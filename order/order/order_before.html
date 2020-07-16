@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>発注担当メニュー</title>
+    <title>未発注一覧</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -35,8 +35,7 @@
                 <thead>
                 <tr>
                     <th scope="col">注文受付番号</th>
-                    <th scope="col">契約店名（漢字）</th>
-                    <th scope="col">契約店名（カタカナ）</th>
+                    <th scope="col">契約店名</th>
                     <th scope="col"></th>
 					<th scope="col"></th>
                 </tr>
@@ -45,21 +44,19 @@
                 <tr>
                     <td>1000000009</td>
                     <td>トヨタ自動車</td>
-					<td>トヨタジドウシャ</td>
-					<td><a href="./edit.html"><button type="button" class="btn btn-info">詳細</button></a></td>
+					<td><a href="./detail_before.html"><button type="button" class="btn btn-warning">詳細</button></a></td>
                     <td><a href="./edit.html"><button type="button" class="btn btn-info">追記</button></a></td>
                 </tr>
                 <tr>
                     <td>1000000010</td>
                     <td>花王</td>
-					<td>カオウ</td>
-					<td><a href="./edit.html"><button type="button" class="btn btn-info">詳細</button></a></td>
+					<td><a href="./detail_after.html"><button type="button" class="btn btn-warning">詳細</button></a></td>
                     <td><a href="./edit.html"><button type="button" class="btn btn-info">追記</button></a></td>
                 </tr>
                 </tbody>
             </table>
         </table>
-		<a href="./order_menu.html">発注一覧</a>へ<br>
+		<a href="./order_menu.html">戻る</a>へ<br>
         <a href="../menu.html">発注担当メニュー</a>へ
     </div>    
 </body>

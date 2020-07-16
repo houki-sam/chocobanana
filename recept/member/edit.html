@@ -3,10 +3,33 @@
 <head>
     <title>編集</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Moment.js -->
+     <!-- moment.min.jsの方が上 -->
+     <!-- moment-with-locales.min.jsの方が下 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
+
+
+    <!-- Tempus Dominus -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+      crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
@@ -32,21 +55,47 @@
         <h1>会員を編集</h1>
         <form action="./edit_confirm.html" method="POST">
             <div class="form-group">
-                <label for="name">名前(漢字)</label>
+                <label for="name">会員氏名(漢字)</label>
                 <input type="text" id="name" value="山田太郎" class="form-control">
             </div>
             <div class="form-group">
-                <label for="name">名前(カナ)</label>
+                <label for="name">会員氏名(カナ)</label>
                 <input type="text" id="name" value="ヤマダタロウ" class="form-control">
             </div>
             <div class="form-group">
                 <label for="company">勤め先会社</label>
                 <input type="text" id="company" value="山田商事" class="form-control">
             </div>
+            <div class="form-group">
+                <label for="company">社員番号</label>
+                <input type="text" id="company" value="A001" class="form-control">
+            </div>
+             <div class="form-group">
+                <label for="name">所属</label>
+                <input type="text" name="group" value="営業部" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">入会日</label>
+            	<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+	            	<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+	              		<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+	                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+              </div>
+          </div>
             <button type="submit" class="btn btn-primary">確認する</button>
         </form>
+        <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+              format: 'YYYY-MM-DD',
+              locale: 'ja',
+              dayViewHeaderFormat: 'YYYY年 MMM',
+            });
+        });
+    </script>
 		<a href="./member.html">会員一覧</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
+		
     </div>    
 </body>
 </html>

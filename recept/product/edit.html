@@ -3,10 +3,30 @@
 <head>
     <title>編集</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Moment.js -->
+     <!-- moment.min.jsの方が上 -->
+     <!-- moment-with-locales.min.jsの方が下 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
+
+
+    <!-- Tempus Dominus -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+      crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
@@ -30,30 +50,138 @@
     </nav>
     <div class="container">
         <h1>商品を編集</h1>
-        <form action="./edit_result.html" method="POST">
-            <div class="form-group">
-            	<label>商品番号</label>
-                <div class="form-group row">
-				    <div class="col-sm-4">
-				        <label>号</label>
-				        <input name="gou" class="firstname form-control" required="" type="text" value="112">
-				    </div>
-				    <div class="col-sm-4">
-				        <label>ページ</label>
-				        <input name="page" class="lastname form-control" required="" type="text" value="124">
-				    </div>
-				    <div class="col-sm-4">
-				        <label>No</label>
-				        <input name="no" class="lastname form-control" required="" type="text" value="4444">
-				    </div>
+        <form action="./register_result.html" method="POST">
+			<div class="card mb-3">
+	            <div class="card-header">
+			    	基本情報（必須）
 				</div>
-            </div>
-            <div class="form-group">
-                <label for="name">商品名</label>
-                <input type="text" id="name" value="単身赴任セット" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">編集する</button>
+			  	<div class="card-body">
+		            <div class="form-group">
+		                <div class="form-group row">
+						    <div class="col-sm-4">
+						        <label>号</label>
+						        <input name="firstname" class="firstname form-control"  type="tel" value="111">
+						    </div>
+						    <div class="col-sm-4">
+						        <label>ページ</label>
+						        <input name="lastname" class="lastname form-control"  type="tel" value="222">
+						    </div>
+						    <div class="col-sm-4">
+						        <label>No</label>
+						        <input name="lastname" class="lastname form-control"  type="tel" value="3333">
+						    </div>
+						</div>
+		            </div>
+		            <div class="form-group">
+		                <label for="name">商品名</label>
+		                <input type="text" name="name"  class="form-control" value="ダンディーパンツ">
+		            </div>
+		    	</div>
+			</div>
+            <div class="card mb-3">
+	            <div class="card-header">
+			    	サイズ
+				</div>
+			  	<div class="card-body">
+		            <div class="form-group">
+		                <label for="name">型式</label>
+		                <input type="text" name="name" class="form-control" value="2020年モデル">
+		            </div>
+		            <div class="row">
+			            <div class="form-group col-4">
+			                <label for="name">色</label>
+			                <input type="text" name="name"  class="form-control" value="ダンディブラック">
+			            </div>
+			            <div class="form-group col-4">
+			                <label for="name">柄</label>
+			                <input type="text" name="name" class="form-control" value="ダンディチェック">
+			            </div>
+			            <div class="form-group col-4">
+			                <label for="name">サイズ</label>
+			                <select id="select1a" class="form-control">
+							    <option>S</option>
+							    <option>M</option>
+							    <option>L</option>
+							    <option>XL</option>
+							  </select>
+			            </div>
+		            </div>
+				</div>
+			</div>
+			
+            <div class="card mb-3">
+	            <div class="card-header">
+			    	価格（必須）
+				</div>
+			  	<div class="card-body">
+		            <div class="row">
+			            <div class="form-group col-6">
+			                <label for="name">仕入れ価格(税込み)</label>
+			                <input type="text" name="name"  class="form-control" value="9000">
+			            </div>
+			            <div class="form-group col-6">
+			                <label for="name">販売価格(税抜き）</label>
+			                <input type="text" name="name"  class="form-control" value="12000">
+			            </div>
+			        </div>
+				</div>
+		    </div>
+		    
+		    <div class="card mb-3">
+	            <div class="card-header">
+			    	追加情報（必須）
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="form-group col-6">
+							<label for="name">販売開始日</label>
+	            			<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+								<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+									<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+	                					<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+             			 			</div>
+             			 		</div>
+          					</div>		            
+          				<div class="form-group col-6">
+	                		<label for="name">販売終了日</label>
+	            			<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+	            				<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+	              					<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+	                					<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+             			 			</div>
+             			 		</div>
+			     			</div>
+			            <div class="form-group col-12">
+			                <label for="name">契約店</label>
+			                <select id="select1a" class="form-control">
+					
+							    <option>契約店A</option>
+							    <option>契約店B</option>
+							  </select>
+						</div>
+		            </div>
+				</div>
+			</div>
+            <button type="submit" class="btn btn-primary">登録</button>
         </form>
+        <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+              format: 'YYYY-MM-DD',
+              locale: 'ja',
+              dayViewHeaderFormat: 'YYYY年 MMM',
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+              format: 'YYYY-MM-DD',
+              locale: 'ja',
+              dayViewHeaderFormat: 'YYYY年 MMM',
+            });
+        });
+    </script>
 		<a href="./member.html">商品一覧</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
     </div>    
