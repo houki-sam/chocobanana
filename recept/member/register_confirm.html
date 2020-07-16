@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>会員一覧</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>会員一覧</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">注文受付</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">発注</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">請求入金</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>会員登録画面</h1>
-        <div class="container-fluid">
-            <table id="productSizes" class="table table-bordered">
-                
-                <tbody>
-                    <tr class="d-flex">
-                        <td class="col-3">名前(漢字)</td>
-                        <td class="col-9">山田太郎</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">名前(カナ)</td>
-                        <td class="col-9">ヤマダタロウ</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">企業名</td>
-                        <td class="col-9">山田商事</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">社員番号</td>
-                        <td class="col-9">A001</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">所属</td>
-                        <td class="col-9">経理部</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">入会日</td>
-                        <td class="col-9">2020年7月6日</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="./register_result.html"><button type="button" class="btn btn-info">OK</button></a>
-        <a href="./register.html"><button type="button" class="btn btn-danger">戻る</button></a>
-        <br>
-            <a href="./register.html">新規登録</a>へ<br>
-            <a href="../menu.html">注文受付担当メニュー</a>へ
-        </div>
-    </div>    
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">注文受付</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">発注</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">請求入金</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<button href="#" class="btn btn-secondary">Logout</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>会員登録画面</h1>
+		<div class="container-fluid">
+			<table id="productSizes" class="table table-bordered">
+				
+				<tbody>
+					<tr class="d-flex">
+						<td class="col-3">名前(漢字)</td>
+						<td class="col-9">山田太郎</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">名前(カナ)</td>
+						<td class="col-9">ヤマダタロウ</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">企業名</td>
+						<td class="col-9">山田商事</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">社員番号</td>
+						<td class="col-9">A001</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">所属</td>
+						<td class="col-9">経理部</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">入会日</td>
+						<td class="col-9">2020年7月6日</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="./register_result.html"><button type="button" class="btn btn-info">OK</button></a>
+		<a href="./register.html"><button type="button" class="btn btn-danger">戻る</button></a>
+		<br>
+			<a href="./register.html">新規登録</a>へ<br>
+			<a href="../menu.html">注文受付担当メニュー</a>へ
+		</div>
+	</div>    
 </body>
 </html>

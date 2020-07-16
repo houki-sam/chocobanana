@@ -1,172 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>注文一覧</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>注文一覧</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">注文受付</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">発注</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">請求入金</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>注文詳細</h1>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">注文受付</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">発注</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">請求入金</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<button href="#" class="btn btn-secondary">Logout</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>注文詳細</h1>
 		<h2>注文情報</h2>
-        <div class="container-fluid">
-            <table id="productSizes" class="table table-bordered">
-                
-                <tbody>
-                    <tr class="d-flex">
-                        <td class="col-3">注文ID</td>
-                        <td class="col-9">000100</td>
-                    </tr>
-                    <tr class="d-flex">
-                        <td class="col-3">会員名</td>
-                        <td class="col-9">山田太郎</td>
-                    </tr>
+		<div class="container-fluid">
+			<table id="productSizes" class="table table-bordered">
+				
+				<tbody>
 					<tr class="d-flex">
-                        <td class="col-3">協賛企業名</td>
-                        <td class="col-9">山田商事</td>
-                    </tr>
+						<td class="col-3">注文ID</td>
+						<td class="col-9">000100</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">受注担当者名</td>
-                        <td class="col-9">山田</td>
-                    </tr>
+						<td class="col-3">会員名</td>
+						<td class="col-9">山田太郎</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">受注受付日付</td>
-                        <td class="col-9">2020/1/1</td>
-                    </tr>
+						<td class="col-3">協賛企業名</td>
+						<td class="col-9">山田商事</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">ご依頼主連絡先電話番号区分</td>
-                        <td class="col-9">自宅</td>
-                    </tr>
+						<td class="col-3">受注担当者名</td>
+						<td class="col-9">山田</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">ご依頼主連絡先電話番号</td>
-                        <td class="col-9">000-111-1111</td>
-                    </tr>
+						<td class="col-3">受注受付日付</td>
+						<td class="col-9">2020/1/1</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">届け先区分</td>
-                        <td class="col-9">他</td>
-                    </tr>
+						<td class="col-3">ご依頼主連絡先電話番号区分</td>
+						<td class="col-9">自宅</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">届け先郵便番号</td>
-                        <td class="col-9">223-0064</td>
-                    </tr>
+						<td class="col-3">ご依頼主連絡先電話番号</td>
+						<td class="col-9">000-111-1111</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">届け先住所</td>
-                        <td class="col-9">神奈川県横浜市港北区日吉本町1-1-1</td>
-                    </tr>
+						<td class="col-3">届け先区分</td>
+						<td class="col-9">他</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">留守のとき</td>
-                        <td class="col-9">隣のジミー</td>
-                    </tr>
+						<td class="col-3">届け先郵便番号</td>
+						<td class="col-9">223-0064</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">届け先氏名</td>
-                        <td class="col-9">東山よし子</td>
-                    </tr>
+						<td class="col-3">届け先住所</td>
+						<td class="col-9">神奈川県横浜市港北区日吉本町1-1-1</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">届け先電話番号</td>
-                        <td class="col-9">111-1111-1111</td>
-                    </tr>
+						<td class="col-3">留守のとき</td>
+						<td class="col-9">隣のジミー</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">支払区分</td>
-                        <td class="col-9">銀行振込</td>
-                    </tr>
+						<td class="col-3">届け先氏名</td>
+						<td class="col-9">東山よし子</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込先銀行</td>
-                        <td class="col-9">みずほ銀行</td>
-                    </tr>
+						<td class="col-3">届け先電話番号</td>
+						<td class="col-9">111-1111-1111</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込先銀行支店名</td>
-                        <td class="col-9">日吉駅前支店</td>
-                    </tr>
+						<td class="col-3">支払区分</td>
+						<td class="col-9">銀行振込</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込先口座種別</td>
-                        <td class="col-9">普通預金</td>
-                    </tr>
+						<td class="col-3">振込先銀行</td>
+						<td class="col-9">みずほ銀行</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込先口座番号</td>
-                        <td class="col-9">1111111</td>
-                    </tr>
+						<td class="col-3">振込先銀行支店名</td>
+						<td class="col-9">日吉駅前支店</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込元銀行</td>
-                        <td class="col-9">みずほ銀行</td>
-                    </tr>
+						<td class="col-3">振込先口座種別</td>
+						<td class="col-9">普通預金</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込元銀行支店名</td>
-                        <td class="col-9">日吉駅前支店</td>
-                    </tr>
+						<td class="col-3">振込先口座番号</td>
+						<td class="col-9">1111111</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込元口座種別</td>
-                        <td class="col-9">普通預金</td>
-                    </tr>
+						<td class="col-3">振込元銀行</td>
+						<td class="col-9">みずほ銀行</td>
+					</tr>
 					<tr class="d-flex">
-                        <td class="col-3">振込元口座番号</td>
-                        <td class="col-9">1111111</td>
-                    </tr>
-                </tbody>
-            </table>
-             <h2>注文商品</h2>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th scope="col">商品番号</th>
-                    <th scope="col">商品名</th>
+						<td class="col-3">振込元銀行支店名</td>
+						<td class="col-9">日吉駅前支店</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">振込元口座種別</td>
+						<td class="col-9">普通預金</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">振込元口座番号</td>
+						<td class="col-9">1111111</td>
+					</tr>
+				</tbody>
+			</table>
+			 <h2>注文商品</h2>
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th scope="col">商品番号</th>
+					<th scope="col">商品名</th>
 					<th scope="col">数量</th>
 					<th scope="col">金額</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>70</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>01</td>
+					<td>70</td>
 					<td>3</td>
 					<td>スマイルニンニク</td>
 					<td>1</td>
 					<td>260円</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>77</td>
+				</tr>
+				<tr>
+					<td>01</td>
+					<td>77</td>
 					<td>1</td>
 					<td>ダンディーパンツ</td>
 					<td>2</td>
 					<td>540円</td>
-                </tr>
-                </tbody>
-            </table>
-        <br>
+				</tr>
+				</tbody>
+			</table>
+		<br>
 		<div class="row">
 		  	<div class="col-10">
 		  	</div>
 			<div class="col-2">
-		    <a href="./edit.html"><button type="submit" class="btn btn-info">編集</button></a>
+			<a href="./edit.html"><button type="submit" class="btn btn-info">編集</button></a>
 			<a href="./delite.html"><button type="submit" class="btn btn-danger">削除</button></a>
 			</div>
 			
 			</div>
-            <a href="./register/register.html">新規登録</a>へ<br>
-            <a href="../menu.html">注文受付担当メニュー</a>へ
-        </div>
-    </div>    
+			<a href="./register/register.html">新規登録</a>へ<br>
+			<a href="../menu.html">注文受付担当メニュー</a>へ
+		</div>
+	</div>    
 </body>
 </html>
