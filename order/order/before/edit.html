@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>未発注追記</title>
+	<meta charset="utf-8"/>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Moment.js -->
+	 <!-- moment.min.jsの方が上 -->
+	 <!-- moment-with-locales.min.jsの方が下 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
+
+
+	<!-- Tempus Dominus -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+
+	<!-- Font Awesome -->
+	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+	  integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="./menu.html">はるみ通信販売</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">注文受付</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">発注</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">請求入金</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<button href="#" class="btn btn-secondary">Logout</button>
+				</li>
+			</ul>
+		</div>
+	</nav>   
+	<div class="container">
+		<h1>未発注追記</h1>
+		<div class="card mb-3">
+			<div class="card-header">
+				受注情報
+			</div>
+			<div class="card-body">
+				<table id="productSizes" class="table table-bordered">
+					<tbody>
+						<tr class="d-flex">
+							<td class="col-3">注文受付番号</td>
+							<td class="col-9">1000332434</td>
+						</tr>
+						<tr class="d-flex">
+							<td class="col-3">注文受付日付</td>
+							<td class="col-9">2030-07-01</td>
+						</tr>
+						<tr class="d-flex">
+							<td class="col-3">注文受付担当</td>
+							<td class="col-9">田中</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="card mb-3">
+					<div class="card-header">
+						依頼主連絡先情報
+					</div>
+					<div class="card-body">
+						<table id="productSizes" class="table table-bordered">
+					
+							<tbody>
+								<tr class="d-flex">
+									<td class="col-3">会員氏名</td>
+									<td class="col-9">山田太郎</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">区分</td>
+									<td class="col-9">自宅</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">区分(その他の場合)</td>
+									<td class="col-9"></td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">電話番号</td>
+									<td class="col-9">080-5376-7626</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="card mb-3">
+					<div class="card-header">
+						届け先情報
+					</div>
+					<div class="card-body">
+						<table id="productSizes" class="table table-bordered">
+							<tbody>
+								<tr class="d-flex">
+									<td class="col-3">届先氏名</td>
+									<td class="col-9">山田太郎</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">届先区分</td>
+									<td class="col-9">自宅</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">郵便番号</td>
+									<td class="col-9">243-0812</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">住所</td>
+									<td class="col-9">東京都府中市日鋼町１−１９</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">留守の時</td>
+									<td class="col-9">隣のジミーさん</td>
+								</tr>
+								<tr class="d-flex">
+									<td class="col-3">電話番号</td>
+									<td class="col-9">042-435-5454</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="card mt-3">
+			<div class="card-header">
+				注文商品情報
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<table id="productSizes" class="table table-bordered col-6">
+						<tbody>
+							<tr class="d-flex">
+								<td class="col-3">契約店番号</td>
+								<td class="col-9">333</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">商品番号</td>
+								<td class="col-9">333-333-3333</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">商品名</td>
+								<td class="col-9">ダンディーパンツ</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">型式</td>
+								<td class="col-9">2020年版</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">色・柄・サイズ</td>
+								<td class="col-9">S</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">販売単価</td>
+								<td class="col-9">1000</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table id="productSizes" class="table table-bordered col-6">
+						<tbody>
+							<tr class="d-flex">
+								<td class="col-3">契約店名</td>
+								<td class="col-9">A商事</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">単位</td>
+								<td class="col-9"></td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">数量</td>
+								<td class="col-9">10</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">金額</td>
+								<td class="col-9">10000</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">送料・他・実費など</td>
+								<td class="col-9">0</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">合計金額</td>
+								<td class="col-9">10000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+				
+
+		<div class="card mt-3">
+			<div class="card-header">
+				振込先銀行情報
+			</div>
+				<div class="card-body">
+					<table id="productSizes" class="table table-bordered">
+						<tbody>
+							<tr class="d-flex">
+								<td class="col-3">発注者担当</td>
+								<td class="col-9">小川</td>
+							</tr>
+							<tr class="d-flex">
+								<td class="col-3">総合計金額</td>
+								<td class="col-9">10000</td>
+							</tr>
+						</tbody>
+					</table>
+					<form action="./register_result.html" method="POST">
+						<div class="form-group">
+							<label for="name">備考欄</label>
+							<textarea name="name"  class="form-control" value="9000"></textarea>
+						</div>
+						<div class="form-group ">
+							<label for="name">発注日</label>
+							<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+								<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+				  				<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<script type="text/javascript">
+						$(function () {
+							$('#datetimepicker1').datetimepicker({
+							  format: 'YYYY-MM-DD',
+							  locale: 'ja',
+							  dayViewHeaderFormat: 'YYYY年 MMM',
+							});
+						});
+					</script>
+					<button class="btn btn-primary mt-3">登録</button>  
+				</div>
+			</div>
+			<a href="./order_menu.html">戻る</a>へ<br>
+		<a href="../menu.html">発注担当メニュー</a>へ
+		</div>
+		
+		
+	</div>    
+</body>
+</html>

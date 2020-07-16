@@ -8,6 +8,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,34 +39,46 @@
 		<form action="./confirm.html" method="POST">
 			<div class="card mb-3">
 				<div class="card-header">
-					担当者登録
+					依頼主連絡先情報(必須)
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-3">
+							<div class="form-group">
+								<label for="company">区分</label><br>
+								<select name="company" class="form-control" required>
+									<option value="0">連絡先電話番号区分を選んでください</option>
+									<option value="1">会社</option>
+									<option value="2">自宅</option>
+									<option value="3">その他</option>
+									</select>
+							</div>
+						</div>
+						<div class="col-3 other">
+							<div class="form-group">
+								<label for="phone_number">区分（その他の場合）</label>
+								<input type="text" name="phone_number" value="" class="form-control">
+							</div>
+						</div>
+						<div class="col-6 other">
+							<div class="form-group">
+								<label for="address">電話番号</label>
+								<input type="text" name="address" value="" class="form-control" required>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="card-header">
+					届け先情報(必須)
 				</div>
 				<div class="card-body">
 					<div class="form-group">
 						<label for="address">届け先氏名</label>
 						<input type="text" name="address" value="" class="form-control" required>
 					</div>
-					<div class="row">
-						<div class="col-4">
-							<div class="form-group">
-								<label for="company">ご依頼主連絡先電話番号区分</label><br>
-								<select name="company" class="form-control" required>
-									<option value="サンプル1">連絡先電話番号区分を選んでください</option>
-									<option value="サンプル2">会社</option>
-									<option value="サンプル3">自宅</option>
-									<option value="サンプル3">その他</option>
-									</select>
-							</div>
-						</div>
-						<div class="col-4
-							<div class="form-group">
-								<label for="phone_number">ご依頼主連絡先電話番号区分（その他の場合）</label>
-								<input type="text" name="phone_number" value="" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="address">ご依頼主連絡先電話番号</label>
-								<input type="text" name="address" value="" class="form-control" required>
-							</div>
+					
 					<div class="form-group">
 						<label for="company">届け先区分</label><br>
 						<select name="company" class="form-control" required>
@@ -92,7 +105,7 @@
 			
 			<div class="card">
 				<div class="card-header">
-					担当者登録
+					支払い情報(必須)
 				</div>
 			  	<div class="card-body">
 					<div class="form-group">
@@ -109,7 +122,7 @@
 						<div class="col-6">
 							<div class="card">
 								<div class="card-header">
-									担当者登録
+									振込元銀行情報
 								</div>
 					  			<div class="card-body">
 									<div class="form-group">
@@ -138,7 +151,7 @@
 						<div class="col-6">
 							<div class="card">
 								<div class="card-header">
-									担当者登録
+									振込先銀行情報
 								</div>
 					  			<div class="card-body">
 									<div class="form-group">
@@ -167,6 +180,7 @@
 					</div>
 				</div>
 			</div>
+			<button class="btn btn-primary mt-3">登録</button>  
 		</form>
 		<a href="./cart.html">カート一覧</a>へ戻る<br>
 	</div>    
