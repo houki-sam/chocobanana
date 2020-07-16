@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>未発注追記</title>
+	<title>発注済み編集</title>
 	<meta charset="utf-8"/>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -54,7 +54,7 @@
 		</div>
 	</nav>   
 	<div class="container">
-		<h1>未発注追記</h1>
+		<h1>発注済編集</h1>
 		<div class="card mb-3">
 			<div class="card-header">
 				受注情報
@@ -226,21 +226,41 @@
 								<td class="col-3">総合計金額</td>
 								<td class="col-9">10000</td>
 							</tr>
+							<tr class="d-flex">
+								<td class="col-3">備考欄</td>
+								<td class="col-9">特になし</td>
+							</tr>
 						</tbody>
 					</table>
 					<form action="./register_result.html" method="POST">
-						<div class="form-group">
-							<label for="name">備考欄</label>
-							<textarea name="name"  class="form-control" value="9000"></textarea>
-						</div>
+						
 						<div class="form-group ">
-							<label for="name">発注日</label>
+							<label for="name">発送日</label>
 							<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
 								<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
 				  				<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
 									<div class="input-group-text"><i class="fa fa-calendar"></i></div>
 								</div>
 							</div>
+						</div>
+						<div class="form-group">
+							<label for="name">摘要欄</label>
+							<textarea name="name"  class="form-control" value="9000"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="name">発送方法</label>
+							<select name="" class="form-control">
+								<option>白ねこダイワ</option>
+								<option>瀬川飛急便</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>発送方法(その他)</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>問合せ伝票</label>
+							<input type="number" class="form-control">
 						</div>
 					</form>
 					<script type="text/javascript">
