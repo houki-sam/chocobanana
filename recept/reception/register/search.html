@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>検索</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>検索</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -33,13 +33,13 @@
 			</ul>
 		</div>
 	</nav>
-    <div class="container">
-    	<div class="row">
+	<div class="container">
+		<div class="row">
 		  	<div class="col-10">
-		    <h1>商品を検索</h1>
+			<h1>商品を検索</h1>
 		  	</div>
 			<div class="col-2">
-		    <a href="./cart.html"><button type="submit" class="btn btn-primary">カート</button></a>
+			<a href="./cart.html"><button type="submit" class="btn btn-primary">カート</button></a>
 			</div>
 		</div>
 		
@@ -48,27 +48,27 @@
 				商品番号（号、ページ、No）から検索
 				</div>
 			  	<div class="card-body">
-		        <form action="./search_result.html" method="POST">
-		            <div class="form-group">
-		                <div class="form-group row">
-						    <div class="col-sm-3">
-						        <label>号</label>
-						        <input name="gou" class="firstname form-control" required="" type="tel" value="112">
-						    </div>
-						    <div class="col-sm-3">
-						        <label>ページ</label>
-						        <input name="page" class="lastname form-control" required="" type="tel" value="124">
-						    </div>
-						    <div class="col-sm-4">
-						        <label>No</label>
-						        <input name="no" class="lastname form-control" required="" type="tel" value="4444">
-						    </div>
-						    <div class="col-sm-2">
-						    <br>
-						         <button type="submit" class="btn btn-primary">検索する</button>
-						    </div>
+				<form action="./search_result.html" method="POST">
+					<div class="form-group">
+						<div class="form-group row">
+							<div class="col-sm-3">
+								<label>号</label>
+								<input name="gou" class="firstname form-control" required="" type="tel" value="112">
+							</div>
+							<div class="col-sm-3">
+								<label>ページ</label>
+								<input name="page" class="lastname form-control" required="" type="tel" value="124">
+							</div>
+							<div class="col-sm-4">
+								<label>No</label>
+								<input name="no" class="lastname form-control" required="" type="tel" value="4444">
+							</div>
+							<div class="col-sm-2">
+							<br>
+								 <button type="submit" class="btn btn-primary">検索する</button>
+							</div>
 						</div>
-		            </div>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -97,6 +97,6 @@
 		</div>
 		<a href="./register.html">会員確認</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
-    </div>    
+	</div>    
 </body>
 </html>
