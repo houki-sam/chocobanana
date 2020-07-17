@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>新規会員登録</title>
+	<title>会員登録</title>
 	<meta charset="utf-8"/>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -29,7 +32,6 @@
 	  crossorigin="anonymous"></script>
 </head>
 <body>
-
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -55,15 +57,27 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1>新規会員登録</h1>
+		<h1>会員登録</h1>
 		<form action="./register_confirm.html" method="POST">
 			<div class="form-group">
-				<label for="name">会員氏名(漢字)</label>
-				<input type="text" name="user_name" value="" class="form-control">
+				<label for="name">入会日</label>
+				<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+					<input type="text" class="form-control datetimepicker-input" value="" data-target="#datetimepicker1"/>
+				<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+							<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+			  	</div>
+		  	</div>
+			<div class="form-group">
+				<label for="company">社員番号</label>
+				<input type="text" id="company" value="" class="form-control">
 			</div>
 			<div class="form-group">
-				<label for="name">会員氏名(カナ)</label>
-				<input type="text" name="user_name" value="" class="form-control">
+				<label for="name">会員名(漢字)</label>
+				<input type="text" id="name" value="" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="name">会員名(カナ)</label>
+				<input type="text" id="name" value="" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="company">協賛企業名</label><br>
@@ -74,22 +88,13 @@
 					</select>
 			</div>
 			<div class="form-group">
-				<label for="name">社員番号</label>
-				<input type="text" name="group" value="" class="form-control">
+				<label for="name">備考</label>
+				<input type="textarea" name="user_name" value="" class="form-control">
 			</div>
-			<div class="form-group">
-				<label for="name">所属</label>
-				<input type="text" name="group" value="" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="name">入会日</label>
-				<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-					<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-				  		<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-					<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-			  </div>
-		  </div>
-		  <script type="text/javascript">
+			
+			<button type="submit" class="btn btn-primary">登録</button>
+		</form>
+		<script type="text/javascript">
 		$(function () {
 			$('#datetimepicker1').datetimepicker({
 			  format: 'YYYY-MM-DD',
@@ -98,13 +103,9 @@
 			});
 		});
 	</script>
-	<br>
-			<button type="submit" class="btn btn-primary">確認する</button>
-		</form>
-		<br>
-		
-		<a href="./member.html">会員一覧</a>へ<br>
+		<a href="./member.html">戻る</a><br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
+		
 	</div>    
 </body>
 </html>

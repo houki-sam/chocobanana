@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>発注一覧</title>
+	<title>会員削除確認</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,13 +13,13 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="./menu.html">はるみ通信販売</a>
+		<a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="#">注文受付</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#">発注</a>
 				</li>
 				<li class="nav-item">
@@ -32,31 +32,32 @@
 				</li>
 			</ul>
 		</div>
-	</nav>   
+	</nav>
 	<div class="container">
-		<h1>発注一覧</h1>
-		<div class="row">
-			<div class="col-3">
-				<div class="card" >
-					<a href="./before/order.html">
-						<div class="card-body">
-						<h5 class="card-title">未発注一覧</h5>
-						</div>
-					</a>
-				</div>
-			</div>
-			
-			<div class="col-3">
-				<div class="card" >
-					<a href="./after/order.html">
-						<div class="card-body">
-						<h5 class="card-title">発注済み一覧</h5>
-						</div>
-					</a>
-				</div>
-			</div>
+		<h1>会員削除確認</h1>
+		<div class="container-fluid">
+			<table id="productSizes" class="table table-bordered">
+				
+				<tbody>
+					<tr class="d-flex">
+						<td class="col-3">会員ID</td>
+						<td class="col-9">100000</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">協賛企業名（漢字）</td>
+						<td class="col-9">山田商事</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">会員名（漢字）</td>
+						<td class="col-9">山田太郎</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<a href="./delite_result.html"><button type="button" class="btn btn-info">確定</button></a>
+		<a href="./delite.html"><button type="button" class="btn btn-danger">戻る</button></a>
+		<br>
 		</div>
-		<a href="../menu.html">発注担当メニュー</a>へ
-	</div>
+	</div>    
 </body>
 </html>

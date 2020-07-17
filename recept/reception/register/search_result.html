@@ -36,55 +36,101 @@
     <div class="container">
 		<div class="row">
 			<div class="col-10">
-		    <h1>検索結果</h1>
+		    	<h1>検索結果</h1>
 		  	</div>
 		  	<div class="col-2">
-		    <a href="./cart.html"><button type="submit" class="btn btn-primary">カート</button></a>
+		    	<a href="./cart.html"><button type="submit" class="btn btn-primary">カート</button></a>
 		  	</div>
 		</div>
-        <table>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th scope="col">商品番号</th>
-                    <th scope="col">商品名</th>
-					<th scope="col">色・柄・サイズ</th>
-					<th scope="col"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-					<td>01-70-3</td>
-                    <td>ダンディーパンツ</td>
-					<td>ピンク</td>
-                    <td>
-                    	<a href="../../product/detail.html"><button type="button" class="btn btn-warning float-right">詳細</button></a>
-						<form method="post" action=""#" class="float-right mr-1">
-							<div class="form-group">
-								<input type="tel" name="amount" value="1" sytle="width:20px;">
-	                    		<button type="button" class="btn btn-danger">カートに入れる</button>
-	                    	</a>
-	                    </form>
-					</td>
-                </tr>
-                <tr>
-					<td>01-77-1</td>
-                    <td>スマイルニンニク</td>
-					<td></td>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>商品番号</th>
+					<th>商品名</th>
+					<th>単価</th>
+					<th>型</th>
+					<th>柄</th>
+					<th>色</th>
+					<th>サイズ</th>
+					<th>数量</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>111-111-1111</td>
+					<td>ダンディーパンツ</td>
+					<td>3,000</td>
+					<td>2020</td>
 					<td>
-                    	<a href="../../product/detail.html"><button type="button" class="btn btn-warning float-right">詳細</button></a>
-						<form method="post" action=""#" class="float-right mr-1">
-							<div class="form-group">
-								<input type="tel" name="amount" value="1" sytle="width:20px;">
-	                    		<button type="button" class="btn btn-danger">カートに入れる</button>
-	                    	</a>
-	                    </form>
+						<select>
+							<option>チェック</option>
+							<option>白</option>
+						</select>
 					</td>
-                </tr>
-                </tbody>
-            </table>
-        </table>
-        <a href="./search.html">商品検索</a>へ<br>
-    </div>    
+					<td>
+						<select>
+							<option>ブラック</option>
+							<option>白</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>S</option>
+							<option>M</option>
+							<option>L</option>
+							<option>XL</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" style="width: 50px;">
+					</td>
+					<td>
+						<button class="btn btn-danger">カートにいれる</button>
+					</td>
+					<td>
+						<button class="btn btn-warning">詳細</button>
+					</td>
+				</tr>
+				<tr>
+					<td>111-111-1111</td>
+					<td>スマイルニンニク</td>
+					<td>3,000</td>
+					<td>2020</td>
+					<td>
+						<select>
+							<option></option>
+							<option>白</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option></option>
+							<option>白</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option></option>
+							<option>M</option>
+							<option>L</option>
+							<option>XL</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" style="width: 50px;">
+					</td>
+					<td>
+						<button class="btn btn-danger">カートにいれる</button>
+					</td>
+					<td>
+						<button class="btn btn-warning">詳細</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<button class="btn btn-primary" href="./search.html">戻る</button>
+	</div>    
 </body>
 </html>

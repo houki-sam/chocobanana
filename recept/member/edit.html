@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>編集</title>
+	<title>会員編集</title>
 	<meta charset="utf-8"/>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -57,37 +57,50 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1>会員を編集</h1>
+		<h1>会員編集</h1>
 		<form action="./edit_confirm.html" method="POST">
 			<div class="form-group">
-				<label for="name">会員氏名(漢字)</label>
-				<input type="text" id="name" value="山田太郎" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="name">会員氏名(カナ)</label>
-				<input type="text" id="name" value="ヤマダタロウ" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="company">勤め先会社</label>
-				<input type="text" id="company" value="山田商事" class="form-control">
-			</div>
+				<label for="name">入会日</label>
+				<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+					<input type="text" class="form-control datetimepicker-input" value="2019/12/21" data-target="#datetimepicker1"/>
+				<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+							<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+			  	</div>
+		  	</div>
 			<div class="form-group">
 				<label for="company">社員番号</label>
 				<input type="text" id="company" value="A001" class="form-control">
 			</div>
-			 <div class="form-group">
-				<label for="name">所属</label>
-				<input type="text" name="group" value="営業部" class="form-control" required>
+			<div class="form-group">
+				<label for="name">会員名(漢字)</label>
+				<input type="text" id="name" value="山田太郎" class="form-control">
 			</div>
 			<div class="form-group">
-				<label for="name">入会日</label>
+				<label for="name">会員名(カナ)</label>
+				<input type="text" id="name" value="ヤマダタロウ" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="company">協賛企業名</label><br>
+				<select name="company" class="form-control">
+					<option value="サンプル1">勤め先企業を選んでください</option>
+					<option value="サンプル2">山田商事</option>
+					<option value="サンプル3">田中商事</option>
+					</select>
+			</div>
+			<div class="form-group">
+				<label for="name">ご注文年月</label>
 				<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-					<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-				  		<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-					<div class="input-group-text"><i class="fa fa-calendar"></i></div>
-			  </div>
-		  </div>
-			<button type="submit" class="btn btn-primary">確認する</button>
+					<input type="text" class="form-control datetimepicker-input" value="2019/12/21" data-target="#datetimepicker1"/>
+				<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+							<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+			  	</div>
+		  	</div>
+			<div class="form-group">
+				<label for="name">備考</label>
+				<input type="textarea" name="user_name" value="" class="form-control">
+			</div>
+			
+			<button type="submit" class="btn btn-primary">編集</button>
 		</form>
 		<script type="text/javascript">
 		$(function () {
@@ -98,7 +111,9 @@
 			});
 		});
 	</script>
-		<a href="./member.html">会員一覧</a>へ<br>
+		<br>
+		<a href="./member.html">戻る</a><br>
+		<a href="./detail.html">会員詳細</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
 		
 	</div>    

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>支払金額一覧詳細</title>
+	<title>登録確認</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,16 +13,16 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="./menu.html">はるみ通信販売</a>
+		<a class="navbar-brand" href="../menu.html">はるみ通信販売</a>
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="#">注文受付</a>
 				</li>
-				<li class="nav-item ">
+				<li class="nav-item">
 					<a class="nav-link" href="#">発注</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#">請求入金</a>
 				</li>
 			</ul>
@@ -32,102 +32,77 @@
 				</li>
 			</ul>
 		</div>
-	</nav>  
+	</nav>
 	<div class="container">
-		<h1>支払金額一覧詳細</h1>
-			<h2>支払先情報</h2>
+		<h1>協賛企業登録確認</h1>
+		<p>協賛企業登録の確認画面です</p>
+		<div class="container-fluid">
 			<table id="productSizes" class="table table-bordered">
 				
 				<tbody>
 					<tr class="d-flex">
-						<td class="col-3">契約店ID</td>
-						<td class="col-9">000100</td>
+						<td class="col-3">協賛企業名（漢字）</td>
+						<td class="col-9">ロータス自動車</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">契約店名（漢字）</td>
-						<td class="col-9">山田太郎</td>
+						<td class="col-3">協賛企業名（カナ）</td>
+						<td class="col-9">ロータスジドウシャ</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">契約店名（カナ）</td>
-						<td class="col-9">山田商事</td>
+						<td class="col-3">請求先郵便番号</td>
+						<td class="col-9">1234567</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">郵便番号</td>
-						<td class="col-9">山田</td>
+						<td class="col-3">請求先住所</td>
+						<td class="col-9">東京都府中市日鋼町1-19</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">住所</td>
-						<td class="col-9">2020/1/1</td>
-					</tr>
-					<tr class="d-flex">
-						<td class="col-3">電話番号</td>
-						<td class="col-9">自宅</td>
+						<td class="col-3">請求先電話番号</td>
+						<td class="col-9">042-351-1111</td>
 					</tr>
 					<tr class="d-flex">
 						<td class="col-3">担当部署</td>
-						<td class="col-9">000-111-1111</td>
+						<td class="col-9">経理</td>
 					</tr>
 					<tr class="d-flex">
 						<td class="col-3">担当者名（漢字）</td>
-						<td class="col-9">他</td>
+						<td class="col-9">安田一太郎</td>
 					</tr>
 					<tr class="d-flex">
 						<td class="col-3">担当者名（カナ）</td>
-						<td class="col-9">223-0064</td>
+						<td class="col-9">ヤスダイチタロウ</td>
 					</tr>
 					<tr class="d-flex">
 						<td class="col-3">担当者電話番号</td>
-						<td class="col-9">神奈川県横浜市港北区日吉本町1-1-1</td>
+						<td class="col-9">042-351-1111</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">振込銀行</td>
-						<td class="col-9">東山よし子</td>
+						<td class="col-3">給与支給日</td>
+						<td class="col-9">25</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">振込銀行支店名</td>
-						<td class="col-9">111-1111-1111</td>
-					</tr>
-					<tr class="d-flex">
-						<td class="col-3">口座種別</td>
-						<td class="col-9">銀行振込</td>
-					</tr>
-					<tr class="d-flex">
-						<td class="col-3">銀行口座番号</td>
+						<td class="col-3">協賛企業振込銀行</td>
 						<td class="col-9">みずほ銀行</td>
 					</tr>
 					<tr class="d-flex">
-						<td class="col-3">支払金額</td>
-						<td class="col-9">日吉駅前支店</td>
+						<td class="col-3">協賛企業振込銀行支店名</td>
+						<td class="col-9">府中</td>
 					</tr>
-				
+					<tr class="d-flex">
+						<td class="col-3">協賛企業振込銀行口座種別</td>
+						<td class="col-9">当座</td>
+					</tr>
+					<tr class="d-flex">
+						<td class="col-3">協賛企業振込銀行口座番号</td>
+						<td class="col-9">1587986</td>
+					</tr>
 				</tbody>
 			</table>
+			<a href="./register_result.html"><button type="button" class="btn btn-info">確定</button></a>
+		<a href="./register.html"><button type="button" class="btn btn-danger">戻る</button></a>
+		<br>
 
-			<h2>発注ごとの支払情報</h2>
-			<table class="table table-striped">
-				<thead>
-				<tr>
-					<th scope="col">発注ID</th>
-					<th scope="col">支払金額</th>
-					<th scope="col"></th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>3333333333</td>
-					<td>12,000円</td>
-					<td><a href="../../order/confirm/detail.html"><button type="button" class="btn btn-warning">詳細</button></a></td>
-				</tr>
-				<tr>
-					<td>3333333333</td>
-					<td>12,000円</td>
-					<td><a href="../../order/confirm/detail.html"><button type="button" class="btn btn-warning">詳細</button></a></td>
-				</tr>
-				</tbody>
-			</table>
-
-			<a href="./payment.html">戻る</button></a><br>
-			<a href="../menu.html">請求入金担当メニュー</a>へ
+		</div>
 	</div>    
 </body>
 </html>

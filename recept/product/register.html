@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>新規会員登録</title>
+	<title>商品登録</title>
 	<meta charset="utf-8"/>
 		<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -54,7 +54,7 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1>商品を編集</h1>
+		<h1>商品を登録</h1>
 		<form action="./register_result.html" method="POST">
 			<div class="card mb-3">
 				<div class="card-header">
@@ -122,11 +122,11 @@
 			  	<div class="card-body">
 					<div class="row">
 						<div class="form-group col-6">
-							<label for="name">仕入れ価格(税込み)</label>
+							<label for="name">仕入単価(税込み)</label>
 							<input type="text" name="name"  class="form-control" value="">
 						</div>
 						<div class="form-group col-6">
-							<label for="name">販売価格(税抜き）</label>
+							<label for="name">販売単価(税抜き）</label>
 							<input type="text" name="name"  class="form-control" value="">
 						</div>
 					</div>
@@ -169,6 +169,7 @@
 				</div>
 			</div>
 			<button type="submit" class="btn btn-primary">登録</button>
+			<button type="submit" class="btn btn-danger">戻る</button>
 		</form>
 		<script type="text/javascript">
 		$(function () {
@@ -188,7 +189,6 @@
 			});
 		});
 	</script>
-		<a href="./member.html">商品一覧</a>へ<br>
 		<a href="../menu.html">注文受付担当メニュー</a>へ
 	</div>    
 </body>
